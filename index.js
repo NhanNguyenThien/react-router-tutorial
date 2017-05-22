@@ -14,10 +14,12 @@ ReactDOM.render((
         <li><Link to="/about">About</Link></li>
         <li><Link to="/contacts">Contacts</Link></li>
       </ul>
-      <Route exact path="/" component={Home} />
-      <Route path="/about" component={About} />
-      <Route path="/contacts" component={Contacts} />
-      <Route path="*" component={NoMatch} />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/contacts" component={Contacts} />
+        <Route path="*" component={NoMatch} />
+      </Switch>
     </div>
   </BrowserRouter>
 ), document.getElementById('root'));
