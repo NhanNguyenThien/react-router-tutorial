@@ -6,7 +6,6 @@ export default class Item extends React.Component {
     return (
       <div style={{border: '1px solid black', padding: '10px'}}>
         Item
-        <li>name: {this.props.match.params.name}</li>
       </div>
     )
   }
